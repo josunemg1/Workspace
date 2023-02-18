@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Mi formulario</title>
+		<link type="text/css" rel="stylesheet" href="styles.css">
+ 		 <script src="index.js"></script>
+  	</head>
+  	<body>
+		<h2>Create Account</h2>
+    		<form action="./procesaFormulario.php"> 
+			<p>Nombre: <input type="text" id="usuario" pattern="[A-Za-z]{1,8}" title="No se admiten caracteres numéricos y/o especiales." required/></p>
+			<p>Email: <input type="email" id="email" title="Incluye un signo "@" en la dirección de correo electrónico. La dirección "  " no incluye el signo "@"." required/></p>
+			<p>Clave: <input type="password" name="clave" minlength="8" class="form-control" id="pass1" required/></p>
+			<p>Confirme su clave: <input type="password" name="clave" minlength="8" class="form-control" id="pass2" required/></p>
+			<input type="submit" value="ENVIAR" class="boton"/>
+
+		</form>
+	</body>
+</html>
+
